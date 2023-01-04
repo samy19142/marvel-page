@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.comics-page .header {
+  margin-left: 0 !important;
+  margin-top: 30px !important;
+  margin-bottom: 50px !important;
+  font: 800 26px/1 "RobotoCondensed", "Trebuchet MS", Helvetica, Arial,
+    sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.series-page .header {
+  margin-left: 0 !important;
+  margin-top: 30px !important;
+  margin-bottom: 50px !important;
+  font: 800 26px/1 "RobotoCondensed", "Trebuchet MS", Helvetica, Arial,
+    sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#slide-comics-image {
+  padding: 50px 0;
+  width: 100%;
+  background-image: url(./img/slide-comics.jpeg);
+  height: 350px;
+  background-position: top;
+}
+
+#slide-series-image {
+  padding: 50px 0;
+  width: 100%;
+  background-image: url(./img/last-movies.jpeg);
+  height: 350px;
+  background-position: top;
+}
+
+.error-404 {
+  width: 100%;
+  background-image: url(./img/page-404.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.error-404-content-text {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 100vh;
+}
+
+.error-404 .error-404-content-text h1 {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.error-404 .error-404-content-text h2 {
+  color: white;
+  margin-bottom: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-404 .error-404-content-text .error-404-content-text-container {
+  text-align: center;
 }
