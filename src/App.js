@@ -5,11 +5,13 @@ import Home from "./pages/Home";
 import Error404 from "./pages/Error404";
 import Series from "./pages/Series";
 import Comics from "./pages/Comics";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      <Header/>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/inicio" element={<Home/>} />
