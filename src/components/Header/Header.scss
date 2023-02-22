@@ -1,0 +1,34 @@
+.header-menu{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.664));
+    padding: 10px, 30px;
+
+
+.menu .item {
+    color:#ffffff !important;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.03125rem;
+    text-transform: uppercase  !important;
+}
+
+.menu .active.item {
+    background : none !important;
+    color:#ffffff !important;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom:0;
+    height:2px;
+    background: rgba(3, 182, 242, 0);
+    -webkit-transition: background-color 0.08s ease-out;
+    transition:background-color 0.08s ease-out;
+    background-color: #00a3da;
+
+
+}
+
+}
