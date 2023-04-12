@@ -5,7 +5,7 @@ import { useState } from "react";
 const useFetch=(url,options)=>{
 
 const [result,setResult]= useState(null);
-const [loading, setloading]= useState(null);
+const [loading, setloading]= useState(true);
 const [error,setError]= useState(null);
 
 
