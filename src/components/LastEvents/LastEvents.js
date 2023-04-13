@@ -1,4 +1,6 @@
 import { Card, Icon, Image, Dimmer, Loader, Button } from "semantic-ui-react";
+import "./LastEvents.scss";
+
 
 const LastEvents = ({ lastEventsFetch }) => {
   const { loading, result } = lastEventsFetch;
