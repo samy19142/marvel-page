@@ -1,36 +1,28 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
+const useFetch = (url, options) => {
+  const [result, setResult] = useState(null);
+  const [loading, setloading] = useState(true);
+  const [error, setError] = useState(null);
 
-const useFetch=(url,options)=>{
-
-const [result,setResult]= useState(null);
-const [loading, setloading]= useState(true);
-const [error,setError]= useState(null);
-
-
-useEffect(() => {
-   const  dato= async()=>{
-    try{
-        const res = await fetch(url,options);
+  useEffect(() => {
+    const dato = async () => {
+      try {
+        const res = await fetch(url, options);
         const json = await res.json();
         setResult(json);
         setloading(false);
-    } catch(err){
+      } catch (err) {
         setError(err);
         setloading(false);
-    }
-   }
+      }
+    };
 
-   dato();
+    dato();
+  }, [options, url]);
 
-}, [options,url]);
-
-
-return {loading,result,error}
-  
-
+  return { loading, result, error };
 };
-
 
 export default useFetch;
