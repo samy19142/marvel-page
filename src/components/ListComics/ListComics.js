@@ -2,7 +2,6 @@ import "./ListComics.scss";
 import { Card, Icon, Image, Dimmer, Loader, Button } from "semantic-ui-react";
 
 const ListComics = ({ listComics, renderComics, setRenderComics }) => {
-
   const { loading, result } = listComics;
   if (loading || !result)
     return (
@@ -15,7 +14,6 @@ const ListComics = ({ listComics, renderComics, setRenderComics }) => {
 
   const loadMoreComics = () => {
     const numberComics = renderComics;
-    console.log(renderComics);
     setRenderComics(numberComics + 5);
   };
 

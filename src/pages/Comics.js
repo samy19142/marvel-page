@@ -6,7 +6,6 @@ import { useState } from "react";
 
 const Comics = () => {
   const [renderComics, setRenderComics] = useState(10);
-  console.log(renderComics)
   const listComics = useFetch(
     `${process.env.REACT_APP_URL_BASE}/comics?ts=1&apikey=${process.env.REACT_APP_API_KEY_MARVEL}&hash=${process.env.REACT_APP_HASH_ID}&orderBy=focDate&limit=${renderComics}`
   );
